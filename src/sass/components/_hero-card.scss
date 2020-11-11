@@ -1,0 +1,30 @@
+.hero-card {
+    &__info {
+        
+    }
+
+        &__heading {
+            // display: flex; 
+            // flex-direction: column; 
+        }
+
+            &__intro-bubble {
+                background-color: $color-primary-1;
+                display: inline-block;
+            }
+
+            &__title {
+                font-size: 5rem;
+            }
+        
+            &__position {
+                font-size: 2rem;
+            }
+    
+        &__contact {
+
+        }
+            &__contact-item {
+
+            }
+}
