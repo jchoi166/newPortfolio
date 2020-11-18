@@ -1,0 +1,39 @@
+.about-card {
+    display: flex; 
+    justify-content: space-between;
+    max-width: 98rem;
+    margin: auto; 
+
+    &__image {
+        // height: auto; 
+        // height: 120rem;
+        width: 120rem;
+        margin-right: 10rem;
+
+        img {
+            // height: auto;
+            width: 100%;
+        }
+    }
+
+    &__info {
+        max-width: 65%;
+    }
+
+        &__heading {
+            line-height: 2.7rem;
+        }
+
+            &__title {
+                font-size: 3.2rem;
+                font-weight: 500; 
+            }
+
+            &__bio {
+                margin: 2.5rem 0;
+            }
+    &__tag-container {
+        margin: -1rem 0 2.5rem 0;
+        max-width: 80%;
+    }
+}
