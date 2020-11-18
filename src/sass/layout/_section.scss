@@ -1,7 +1,22 @@
 .section-wrapper {
-    margin: 0 10rem;
+    // margin: 0 20rem;
+    // max-width: 75%;
+    // margin: 0 auto;
+    width: 100%;
 }
 
 .section-home {
     // background-image: url("/src/assets/bluetakashi.jpg");
+    // margin: auto;
+    padding: 20rem 0 15rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+            rgba(white, 0.9) ,
+            rgba(white, 0.9)), 
+            url("/src/assets/bluetakashi.jpg");
+    // background-color: rgba(white, .5)
+}
+
+.section-about {
+    margin: 15rem 0 8rem 0;
 }

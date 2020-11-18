@@ -1,0 +1,19 @@
+.button {
+    margin: 1.5rem 2rem 0 0;
+    display: inline-block;
+
+    &--tag {
+        border: 1px solid $color-primary-1;
+        padding: .3rem .7rem;
+        border-radius: 4px;
+    }
+
+    &--link {
+        color: $color-white;
+        background-color: $color-primary-1;
+        font-weight: 500;
+        padding: 1.4rem 3rem;
+        font-size: 1.6rem;
+        border-radius: 60px;
+    }
+}
