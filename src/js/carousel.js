@@ -78,7 +78,7 @@ prevButton.addEventListener('click', e => {
     newTrackArray()
     track.style.transform = 'translateX(-' + slideWidth + 'px)'
     setTimeout(e => {
-        track.style.transition = '300ms ease-in'
+        track.style.transition = '700ms ease-in-out'
         track.style.transform = 'translateX(0)'
     })
     
@@ -90,7 +90,7 @@ track.addEventListener('transitionend', e => {
     newTrackArray()
     track.style.transform = 'translateX(0)'
     setTimeout(e => {
-        track.style.transition = '300ms ease-in'
+        track.style.transition = '700ms ease-in-out'
     })
 })
 
