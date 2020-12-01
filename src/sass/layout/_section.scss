@@ -5,8 +5,8 @@
     width: 100%;
 }
 
-.section-home {
-    padding: 20rem 0 15rem 0;
+#section-home {
+    padding: 20rem 0 13rem 0;
     background-image: linear-gradient(
         to right bottom,
             rgba(white, 0.9) ,
@@ -14,16 +14,34 @@
             url("/src/assets/bluetakashi.jpg");
 }
 
-.section-about {
+#section-about {
     // margin: 9rem 0 8rem 0;
-    margin: 15rem 0;
+    padding: 13rem 0;
 }
 
-.section-portfolio {
+#section-portfolio {
     background-image: linear-gradient(
         to right bottom,
             rgba(white, 0.9) ,
             rgba(white, 0.9)), 
             url("/src/assets/yellowtakashi.jpg");
-    padding: 15rem 0;
+    padding: 11rem 0;
+
+    h1 {
+        margin: 0 0 7rem 0;
+        text-align: center;
+    }
+}
+
+#section-contact {
+    display: flex;
+    max-width: 98rem; 
+    margin: auto; 
+    padding: 13rem 0;
+
+    &__info {
+        line-height: 5rem;
+        // align-self: center;
+    }
+
 }

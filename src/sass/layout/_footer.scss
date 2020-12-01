@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    max-width: 98rem;
+    margin: auto; 
+    margin-bottom: 6rem;
+
+    &__credit {
+        // width: 50%;
+    }
+
+    &__icon-container {
+        display: flex;
+        // width: 50%;
+        margin-left: 3rem; 
+    }
+
+    &__icon {
+        margin: 0 2rem;
+    }
+}
