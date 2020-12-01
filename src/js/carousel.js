@@ -36,22 +36,22 @@ const moveToSlide = (currentSlide, targetSlide) =>{
     currentSlide.classList.remove('current__slide')
     targetSlide.classList.add('current__slide')
 
-    oldDot = dotsNav.querySelector('.current__slide')
-    oldDot.classList.remove('current__slide')
+    oldDot = dotsNav.querySelector('.current__dot')
+    oldDot.classList.remove('current__dot')
 
     let hello = track.querySelector('.current__slide').id
     switch (hello){
         case 's1':
             currentDot = document.getElementById('d1')
-            currentDot.classList.add('current__slide')
+            currentDot.classList.add('current__dot')
             break
         case 's2':
             currentDot = document.getElementById('d2')
-            currentDot.classList.add('current__slide')
+            currentDot.classList.add('current__dot')
             break
         case 's3':
             currentDot = document.getElementById('d3')
-            currentDot.classList.add('current__slide')
+            currentDot.classList.add('current__dot')
             break
     }
    

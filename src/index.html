@@ -11,12 +11,12 @@
     <div class="nav-container">
         <div class="nav">
             <img src="./assets/pngwave.png" alt="" class="nav__img">
-            <ul class="nav__list">
-                <li class="nav__item">Home</li>
-                <li class="nav__item">About</li>
-                <li class="nav__item">Portfolio</li>
-                <li class="nav__item">Contact</li>
-            </ul>
+            <div class="nav__list">
+                <a class="nav__item" id="link-home" href="#section-home">Home</a>
+                <a class="nav__item" id="link-about" href="#section-about">About</a>
+                <a class="nav__item" id="link-portfolio" href="#section-portfolio">Portfolio</a>
+                <a class="nav__item" id="link-contact" href="#section-contact">Contact</a>
+            </div>
         </div>
     </div>
     
@@ -24,7 +24,7 @@
     
     <div class="section-wrapper">
 
-        <div class="section-home">
+        <div id="section-home">
         <!-- <img src="./assets/JC.png" alt="" class="nav__img"> -->
 
             <div class="hero-card ">
@@ -37,7 +37,7 @@
                     <div class="hero-card__contact">
                         <div class="hero-card__contact-item"><img src="https://img.icons8.com/material/24/000000/new-post--v1.png"/>jchoi166@gmail.com</div>
                         <div class="hero-card__contact-item"><img src="https://img.icons8.com/material/24/000000/cell-phone--v1.png"/>1 555 555-5555</div>
-                        <div class="hero-card__contact-item"><img src="https://img.icons8.com/material/24/000000/worldwide-location--v1.png"/>3 Winchester, Irvine, Ca</div>
+                        <div class="hero-card__contact-item"><img src="https://img.icons8.com/material/24/000000/worldwide-location--v1.png"/> Irvine, CA</div>
                     </div>
                     <div class="hero-card__icon-container">
                         <div class="hero-card__icon"><img src="https://img.icons8.com/material/24/000000/facebook-new.png"/></div>
@@ -50,7 +50,7 @@
             
         </div>
 
-        <div class="section-about">
+        <div id="section-about">
 
             <div class="about-card ">
                 <div class="about-card__image"><img src="./assets/nerd.png" alt=""></div>
@@ -77,7 +77,10 @@
             </div>
         </div>
 
-        <div class="section-portfolio">
+        <div id="section-portfolio">
+
+            <h1>Featured Projects</h1>
+
             <div class="carousel">
 
                 <button class="carousel__button carousel__button--left">
@@ -121,7 +124,7 @@
                         </div>
                     </div>
                     <div class="carousel__nav">        
-                        <span class="carousel__indicator current__slide" id = 'd1'></span>
+                        <span class="carousel__indicator current__dot" id = 'd1'></span>
                         <span class="carousel__indicator" id = 'd2'></span>
                         <span class="carousel__indicator" id = 'd3'></span>        
                     </div> 
@@ -136,9 +139,22 @@
             </div>
         </div>
 
-        <div class="contact"></div>
+        <div id="section-contact">
+            <div class="section-contact__info">
+                <h1>Feel free to contact me with any questions or inquiries! I'd love to work with you in the future! </h1>
+            </div>
+        </div>
 
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="footer__credit">
+                Design credit goes to Siful Islam and his web portfolio template which can be found <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/home-two-w.html">here</a>
+            </div>
+            <div class="footer__icon-container">
+                <div class="footer__icon"><img src="https://img.icons8.com/material/24/000000/facebook-new.png"/></div>
+                <div class="footer__icon"><img src="https://img.icons8.com/material/24/000000/linkedin--v1.png"/></div>
+                <div class="footer__icon"><img src="https://img.icons8.com/material/24/000000/github.png"/></div>
+            </div>
+        </div>
 
     </div>
 </body>

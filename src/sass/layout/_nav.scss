@@ -17,8 +17,18 @@
     }
 
     &__item {
-        list-style: none;
         margin: 0 2rem;
+
+        &,
+        &:visited,
+        &:active {
+            text-decoration: none;
+            color: $color-grey;
+        }
+
+        &:hover {
+            color: $color-primary-1;
+        }
     }
 }
 
@@ -39,4 +49,9 @@
 }
 .nav-transparent {
     background: transparent;
+}
+
+.link-active {
+    // border-bottom: 1px solid black;
+    background-color: red;
 }
