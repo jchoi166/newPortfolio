@@ -53,5 +53,13 @@
 
 .link-active {
     // border-bottom: 1px solid black;
-    background-color: red;
+    // background-color: red;
+    &::after {
+        content: " ";
+        height: 1px;
+        width: 100%;
+        background-color: $color-grey;
+        display: block;
+        transform: translateY(-11px);
+    }
 }
