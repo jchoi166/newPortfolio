@@ -15,5 +15,11 @@
         padding: 1.4rem 3rem;
         font-size: 1.6rem;
         border-radius: 60px;
+
+        &,
+        &:visited,
+        &:active {
+            text-decoration: none; 
+        }
     }
 }
