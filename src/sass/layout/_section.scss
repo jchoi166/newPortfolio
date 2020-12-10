@@ -3,7 +3,10 @@
     // max-width: 75%;
     // margin: 0 auto;
     width: 100%;
+
+    
 }
+
 
 #section-home {
     padding: 20rem 0 13rem 0;
@@ -12,11 +15,19 @@
             rgba(white, 0.9) ,
             rgba(white, 0.9)), 
             url("/src/assets/bluetakashi.jpg");
+
+    @include respond(tab-land) {
+        padding: 20rem 4rem 13rem 4rem;
+    }
 }
 
 #section-about {
     // margin: 9rem 0 8rem 0;
     padding: 13rem 0;
+
+    @include respond(tab-land) {
+        padding: 13rem 4rem;
+    }
 }
 
 #section-portfolio {

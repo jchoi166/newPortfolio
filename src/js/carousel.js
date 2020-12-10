@@ -3,13 +3,22 @@ const prevButton = document.querySelector('.carousel__button--left')
 let dotsNav = document.querySelector('.carousel__nav')
 let track = document.querySelector('.carousel__track')
 let carousel = document.querySelector('.carousel')
+// let slide = document.querySelector('.carousel__slide')
 
 // find widths of slides
 let slides = Array.from(track.children)
 let slideWidth = slides[0].getBoundingClientRect().width
-
+// let slideHeight = slides[0].getBoundingClientRect().height
 
 let canMove = true
+
+// adjust height of carousel to fit absolute slide
+
+// const carouselHeight = () => {
+//     carousel.style.height = slideHeight
+// }
+
+
 //arranges slides next to one another
 let setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px'

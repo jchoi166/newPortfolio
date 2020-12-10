@@ -27,6 +27,12 @@
     max-width: 120rem;
     margin: 0 auto;
 
+    @include respond(tab-land) {
+        height: 95rem;
+        // flex-direction: column;
+    }
+
+
     &__track-container{
         height: 100%;
         position: relative;
@@ -48,6 +54,12 @@
             bottom: 0;
             width: 100%;
             align-items: center;
+            // height: auto;
+
+            @include respond(tab-land) {
+                // height: 20rem;
+                flex-direction: column;
+            }
         }
 
             &__image {
@@ -60,11 +72,21 @@
                     height: 35rem;
                     box-shadow: 0 7px 15px 3px rgba(0, 0, 0, 0.2);
                     border-radius: 4px;
+
+                    @include respond(tab-land) {
+                        height: auto;
+                        width: 100%;
+                    }
                 }
             }
 
-            &__info {
+            &__slide-info {
                 height: 100%;
+                
+                @include respond(tab-land) {
+                    margin-top: 5rem;
+                    // flex-direction: column;
+                }
             }
 
                 &__title {
