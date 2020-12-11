@@ -2,10 +2,18 @@
     margin: 1.5rem 2rem 0 0;
     display: inline-block;
 
+    @include respond(phone) {
+        margin: 0;
+    }
+    
     &--tag {
         border: 1px solid $color-primary-1;
         padding: .3rem .7rem;
         border-radius: 4px;
+        
+        @include respond(phone) {
+            margin: 1rem 1rem;
+        }
     }
 
     &--link {
@@ -15,6 +23,10 @@
         padding: 1.4rem 3rem;
         font-size: 1.6rem;
         border-radius: 60px;
+
+        @include respond(phone) {
+            
+        }
 
         &,
         &:visited,

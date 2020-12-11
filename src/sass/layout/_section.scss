@@ -48,11 +48,21 @@
     display: flex;
     max-width: 98rem; 
     margin: auto; 
-    padding: 13rem 0;
+    padding: 13rem 0;  
 
-    &__info {
+    @include respond(tab-port) {
+        display: block;
+        
+    }
+
+    .contact-header {
         line-height: 5rem;
         // align-self: center;
+
+        @include respond(tab-port){
+            margin: 0rem 3rem 4rem 3rem;
+            text-align: center;
+        }
     }
 
 }

@@ -7,7 +7,13 @@
 html {
     font-size: 62.5%; /*Default font size is 16 px. We set font size to 62.5% because we want our default size to be 10px for the rem measurements we specified below. REM is a unit based on default font size which makes responsive design much easier, as we only need to change the font size to scale everything larger or smaller. */
     scroll-behavior: smooth;
-    // height: 100%;
+    
+    @include respond(tab-port) {
+        font-size: 56.25%;
+    }
+    @include respond(phone) {
+        font-size: 62.5%;
+    }
 }
 
 body {
