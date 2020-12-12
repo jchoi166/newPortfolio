@@ -10,25 +10,54 @@
         padding: 1rem 3rem;
     }
     
+    @include respond(phone) {
+        display: block;
+    }
 
     &__img {
         height: 6rem;
+        width: auto;
+        padding-top: .5rem;
+    }
+
+    &__hamburger {
+        font-size: 3rem;
+        display: none;
+
+        @include respond(phone) {
+            display: block;
+            position: absolute; 
+            right: 3rem;
+            top: 2.5rem;
+            
+        }
     }
 
     &__list {
         display: flex;
         line-height: 6rem; //same as image height
         justify-content: space-between;
+
+
+        @include respond(phone) {
+            flex-direction: column;
+            text-align: center;
+            display: none;
+
+            &--active {
+                display: flex; 
+            }
+        }
     }
 
     &__item {
         margin: 0 2rem;
+        color: $color-grey;
 
         &,
         &:visited,
         &:active {
             text-decoration: none;
-            color: $color-grey;
         }
 
         &:hover {
@@ -74,5 +103,13 @@
         background-color: $color-grey;
         display: block;
         transform: translateY(-11px);
+
+        @include respond(phone) {
+            width: 0; 
+        }
+    }
+
+    @include respond(phone) {
+        color: $color-primary-1;
     }
 }

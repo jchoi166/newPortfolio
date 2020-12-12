@@ -1,5 +1,7 @@
 
 const myNav = document.querySelector('.nav-container');
+const navBurger = document.querySelector(".nav__hamburger")
+const navList = document.querySelector(".nav__list")
 
 const home = document.querySelector('#section-home')
 const about = document.querySelector('#section-about')
@@ -10,7 +12,6 @@ const homeLink = document.querySelector('#link-home')
 const aboutLink = document.querySelector('#link-about')
 const portLink = document.querySelector('#link-portfolio')
 const contactLink = document.querySelector('#link-contact')
-
 
 window.onscroll = () => { 
 
@@ -57,3 +58,8 @@ window.onscroll = () => {
 };
 
 
+
+navBurger.addEventListener("click", () => {
+    // console.log("hello world")
+    navList.classList.toggle('nav__list--active')
+})
