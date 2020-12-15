@@ -34,7 +34,7 @@ module.exports = (env, options) => ({
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "images",
+              outputPath: "images",              
             }
           }
         ]
@@ -60,16 +60,20 @@ module.exports = (env, options) => ({
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/[name].[contenthash].css"
+      filename: "[name].[contenthash].css"
     }),
     new HtmlWebpackPlugin({
         template: "src/index.html"
     }),
-    new CleanWebpackPlugin(["dist"]),
+    new CleanWebpackPlugin(["/", "css"]),
   ],
 
   output: {
-    filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+    path: path.resolve(__dirname),
   }
+  // output: {
+  //   filename: "[name].[contenthash].js",
+  //   path: path.resolve(__dirname, "dist"),
+  // }
 });

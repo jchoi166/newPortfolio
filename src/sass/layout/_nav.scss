@@ -4,26 +4,60 @@
     font-size: 2rem;
     max-width: 98rem;
     margin: 0 auto;
+    padding: 1rem 0;
+
+    @include respond(tab-port) {
+        padding: 1rem 3rem;
+    }
     
+    @include respond(phone) {
+        display: block;
+    }
 
     &__img {
         height: 6rem;
+        width: auto;
+        padding-top: .5rem;
+    }
+
+    &__hamburger {
+        font-size: 3rem;
+        display: none;
+
+        @include respond(phone) {
+            display: block;
+            position: absolute; 
+            right: 3rem;
+            top: 2.5rem;
+            
+        }
     }
 
     &__list {
         display: flex;
         line-height: 6rem; //same as image height
         justify-content: space-between;
+
+
+        @include respond(phone) {
+            flex-direction: column;
+            text-align: center;
+            display: none;
+
+            &--active {
+                display: flex; 
+            }
+        }
     }
 
     &__item {
         margin: 0 2rem;
+        color: $color-grey;
 
         &,
         &:visited,
         &:active {
             text-decoration: none;
-            color: $color-grey;
         }
 
         &:hover {
@@ -39,16 +73,24 @@
     right: 0;
     z-index: 99;
     transition: all .4s;
+
+    @include respond(phone){
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
 }
 
 .nav-colored {
     background-color: white;
-    // box-shadow: 0px 3px 5px -1px rgb(165, 165, 165);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
 }
 .nav-transparent {
     background: transparent;
+
+    @include respond(phone) {
+        background: white;
+    }
 }
 
 .link-active {
@@ -61,5 +103,13 @@
         background-color: $color-grey;
         display: block;
         transform: translateY(-11px);
+
+        @include respond(phone) {
+            width: 0; 
+        }
+    }
+
+    @include respond(phone) {
+        color: $color-primary-1;
     }
 }
