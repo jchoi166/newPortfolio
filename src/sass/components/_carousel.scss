@@ -41,6 +41,10 @@
         height: 71rem;
     }
 
+    @include respond(sphone) {
+        height: 80rem;
+    }
+
 
     &__track-container{
         height: 100%;
@@ -160,12 +164,19 @@
     &__button--left{
         left: -6rem;
         z-index: 5;
+
+        @include respond(sphone) {
+            left: -4rem;
+        }
     }
 
     &__button--right{
         right: -6rem;
         z-index: 5;
-        
+
+        @include respond(sphone) {
+            right: -4rem;
+        }
     }
     
 }   
